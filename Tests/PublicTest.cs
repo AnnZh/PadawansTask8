@@ -8,9 +8,9 @@ namespace PadawansTask8.Tests
         [Test]
         public void RemoveDuplicateWordsTest()
         {
-            string actual = "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta";
+            string actual = "alpha beta1 beta1 gamma gamma gamma delta alpha beta beta gamma gamma gamma delta";
 
-            string expected = "alpha beta  gamma   delta       ";
+            string expected = "alpha beta1 1 gamma   delta       ";
 
             WordsManipulation.RemoveDuplicateWords(ref actual);
 
